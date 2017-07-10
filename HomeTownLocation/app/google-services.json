@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "376870694328",
+    "firebase_url": "https://hometownlocation-c2f7b.firebaseio.com",
+    "project_id": "hometownlocation-c2f7b",
+    "storage_bucket": "hometownlocation-c2f7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376870694328:android:4ddf011fa6bda651",
+        "android_client_info": {
+          "package_name": "com.example.ashu.hometownlocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376870694328-7rqra0al3nuv0u0irq4j0vt0347auf0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ashu.hometownlocation",
+            "certificate_hash": "8f768bcd1cef83d6636396058a2a665a00e898d3"
+          }
+        },
+        {
+          "client_id": "376870694328-9bog3uiiakrmu1ra04hc2itdj0eocqr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp41dg2Ld_J9FKF-wyXPIqco9fpo0pBGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376870694328-9bog3uiiakrmu1ra04hc2itdj0eocqr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

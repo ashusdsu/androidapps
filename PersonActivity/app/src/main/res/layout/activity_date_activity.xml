@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_date_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ashu.personactivity.date_activity">
+
+    <DatePicker
+        android:id = "@+id/dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Pick a date"/>
+
+    <Button
+        android:id = "@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Done"
+        android:layout_below="@+id/dp"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_marginEnd="39dp" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cancelDate"
+        android:id="@+id/button2"
+        android:layout_marginEnd="78dp"
+        android:layout_alignBaseline="@+id/btn"
+        android:layout_alignBottom="@+id/btn"
+        android:layout_alignEnd="@+id/dp" />
+
+</RelativeLayout>

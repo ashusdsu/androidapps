@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ashu.hometownlocation.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        tools:ignore="ExtraText,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+
+                android:ems="10"
+                android:hint = "NickName"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/nickname" />
+
+            <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint = "Password"
+        android:layout_marginTop="20dp"
+        android:id="@+id/password"
+        android:layout_below="@+id/nickname"
+        android:layout_alignStart="@+id/nickname" />
+
+
+            <TextView
+                android:text="Select Country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textView" />
+
+            <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint= "Country"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/country"
+        android:layout_below="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:textSize="18sp"
+         />
+
+
+            <TextView
+                android:text="Select State"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.09" />
+
+            <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+
+        android:hint = "State"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/state"
+        android:layout_below="@+id/country"
+        android:layout_alignStart="@+id/country"
+        android:textSize="18sp"
+        />
+
+
+            <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint = "Year"
+        android:ems="10"
+        android:id="@+id/year"
+        android:layout_below="@+id/state"
+        android:layout_alignStart="@+id/state"
+        android:layout_marginTop="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint = "City"
+                android:ems="10"
+                android:id="@+id/city" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/email"
+                android:hint="EmailID" />
+
+            <TextView
+                android:text="Longitude/ Latitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textView4" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint = "Longitude/Latitude"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:id="@+id/LongLat"
+                android:layout_below="@+id/year"
+                android:layout_alignStart="@+id/year"
+                 />
+
+            <Button
+        android:text="Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set"
+        android:layout_alignTop="@+id/LongLat"
+        android:layout_toEndOf="@+id/year"
+                android:onClick="setLocation"/>
+
+            <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/LongLat"
+        android:onClick="onSubmit"/>
+
+            <Button
+        android:text="Already a User Please Sign in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/submit"
+        android:layout_toEndOf="@+id/submit"
+        android:layout_alignStart="@+id/submit"
+        android:id="@+id/findFriends"
+                android:onClick="logginIn"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

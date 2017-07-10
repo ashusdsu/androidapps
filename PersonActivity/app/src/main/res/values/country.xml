@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name = "countrylist">
+        <item>China</item>
+    <item>India</item>
+    <item>Mexico</item>
+    <item>USA</item>
+
+    </string-array>
+
+    <string-array
+        name = "China">
+        <item>Beijing Municipality</item>
+<item>Tianjin Municipality</item>
+<item>Hebei</item>
+<item>Shanxi </item>
+<item>Inner Mongolia</item>
+<item>Liaoning</item>
+        </string-array>
+
+    <string-array
+        name = "India">
+        <item>Andhra Pradesh</item>
+    <item>Arunachal Pradesh</item>
+    <item>Assam</item>
+    <item>Bihar</item>
+    <item>Chhattisgarh</item>
+    <item>Goa</item>
+    <item>Gujarat</item>
+    <item>Haryana</item>
+</string-array>
+
+    <string-array name = "Mexico">
+        <item>Aguascalientes</item>
+            <item>Baja California</item>
+            <item>Baja California Sur</item>
+            <item>Campeche</item>
+            <item>Chiapas</item>
+    </string-array>
+
+    <string-array name = "USA">
+        <item> Alabama</item>
+    <item>Alaska</item>
+    <item>Arizona</item>
+    <item>Arkansas</item>
+    <item>California</item>
+    </string-array>
+</resources>

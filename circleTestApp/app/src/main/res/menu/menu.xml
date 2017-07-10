@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id = "@+id/group1"
+        android:checkableBehavior="single">
+
+    <item
+        android:id = "@+id/Draw"
+        android:title = "Draw"
+        android:checked = "true"
+        >
+        <menu>
+            <group
+                android:id = "@+id/group2"
+                android:checkableBehavior="single">
+            <item android:id="@+id/Red"
+                android:title="Red"/>
+            <item android:id= "@+id/Blue"
+                android:title = "Blue"/>
+            <item android:id= "@+id/Green"
+                android:title = "Green"/>
+            <item android:id = "@+id/Black"
+                android:title = "Black"
+                android:checked = "true"/>
+            </group>
+            </menu>
+        </item>
+    <item android:id = "@+id/Delete"
+        android:title = "Delete"/>
+    <item android:id = "@+id/Move"
+        android:title = "Move"/>
+    </group>
+
+</menu>
